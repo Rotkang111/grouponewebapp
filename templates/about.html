@@ -1,0 +1,52 @@
+{% extends 'pagesbase.html' %}
+
+    
+{% block content %}
+
+    <div class="header">  
+        <div class="container">  
+            <h1>About CodePlateau</h1>
+            <p><a href="{{url_for('index')}}" style = "text-decoration:none">Home</a> | About CodePlateau</p>
+        </div>
+    </div>
+
+    <h1>ABOUT CODE PLATEAU</h1>
+
+<div class="jumbotron" style="background-color: #ffffff; margin-top:130px; box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19); text-align: justify;">
+
+	<div>
+	<h3><strong>WHO WE ARE</strong></h3>
+	Product or brand names used in this book may be trade names or trademarks. Where we believe
+	that there may be proprietary claims to such trade names or trademarks, the name has been used
+	with an initial capital or it has been capitalized in the style used by the name claimant. Regardless
+	of the capitalization used, all such names have been used in an editorial manner without any intent
+	to convey endorsement of or other affiliation with the name claimant. Neither the author nor the
+	publisher intends to express any judgment as to the validity or legal status of any such proprietary
+	claims.
+	</div>
+    
+    <br/>
+	<div >
+	<h3><strong>HOW WE GOT</strong></h3>
+	This book assumes that the reader has a background similar to that of college
+	sophomores or juniors in electrical engineering or computer science programs who
+	have not yet had a course on computer organization or computer architecture. Basic
+	familiarity with computer operation and terminology is assumed, as is some
+	familiarity with programming in high-level languages.
+	</div>
+
+    <br/>
+	<div>
+	<h3><strong>OUR PLAN TO</strong></h3>
+	This book covers a slightly wider range of topics than most one-term computer
+	architecture courses in order to increase its utility. Readers may find the additional
+	material useful as review or as an introduction to more advanced topics. The book
+	begins with a discussion of data representation and computer arithmetic, followed
+	by chapters on computer organization and programming models. Chapter 5 begins a
+	three-chapter discussion of processor design, including pipelining and instructionlevel
+	parallelism.
+	</div>
+</div>
+
+
+{% endblock %}

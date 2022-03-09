@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+   <head>
+      <meta charset="utf-8">
+      <title>CodePlateau</title>
+      <link rel="icon" type="image/x-icon" href="/static/img/code_plateau-67dn.png">
+      <link rel="stylesheet" href="/static/css/login.css">
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"/>
+   </head>
+  <body>
+
+<div class="wrapper">
+    <div class="title">
+       Register
+    </div>
+
+    {% for category, message in get_flashed_messages(with_categories = true) %}
+           <div style = "color:green;">
+               {{message}}
+               {{category}}
+           </div>
+           {% endfor %}
+
+    <form action = "{{request.path}}" method = "POST">
+       <div class="field">
+          <input type="text" name = "name" required>
+          <label>Full Name</label>
+       </div>
+       <div class="field">
+        <input type="text" name = "email" required>
+        <label>Email Address</label>
+     </div>
+     <div class="field">
+        <input type="text" name = "phone" required>
+        <label>Phone Number</label>
+     </div>
+     <div class="field">
+          <input type="password" name = "password" required>
+          <label>Password</label>
+     </div>
+       
+       <div class="field">
+          <input type="submit" value="Register">
+       </div>
+       <div class="signup-link">
+        Already a member? <a href="{{url_for('login')}}">Login now</a>
+     </div>
+     <div class="signup-link">
+        Go back to <a href="{{url_for('index')}}">CodePlateau</a>
+    </div>
+    </div>
+    </form>
+ </div>
+
+</body>
+</html>
